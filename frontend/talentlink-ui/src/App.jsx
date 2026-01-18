@@ -9,7 +9,7 @@ function App() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await api.post("login/", {
+      const res = await api.post("token/", {
         username,
         password,
       });
